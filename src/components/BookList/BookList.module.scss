@@ -3,7 +3,15 @@
 .books {
     background-color: $camel;
     display: flex;
+    justify-content: space-evenly;
     padding: 10px;
     flex-wrap: wrap;
-    margin: 0 10px;
+    margin: 0 2vw 0 12vw;
+
+}
+
+@media only screen and (max-width: 600px){
+    .books {
+        margin: 0 2vw;
+    }
 }

@@ -3,15 +3,14 @@ import styles from "./Book.module.scss";
 
 class Book extends Component {
     render(){
-
-        const cardData = this.props.cardData;
+        const bookData = this.props.bookData;
 
         return(
             <article className={styles.book}>
-                <img src={require("../../static/images/" + cardData.picture)}/>
+                <img src={require("../../static/images/" + bookData.picture)}/>
                 <div>
-                    <h3>{cardData.title}</h3>
-                    <h4>{cardData.author}</h4>
+                    <h3>{bookData.title}</h3>
+                    <h4>{bookData.author}</h4>
                 </div>
             </article>
         );

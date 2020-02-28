@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import styles from "./BookList.module.scss";
-import Book from "../Book";
+import styles from "./AuthorList.module.scss";
 import {firestore} from "../../firebase";
+import Author from "../Author";
 
-class BookList extends Component {
-
+class AuthorList extends Component {
     state = {
         books: []
     }
@@ -15,19 +14,20 @@ class BookList extends Component {
             .get()
             .then((query) => {
                 const books = query.docs.map(doc => doc.data());
-                this.setState({ books });
+                this.setState({books});
             })
     }
 
     render(){
-        return (
-            <section className={styles.books}>
-                {this.state.books.map((book, index) => (
-                    <Book bookData={book} key={index} />
+        return(
+            <ul>
+                {this.state.books.map((book,index) => (
+                    <Author authorData={book} key={index}/>
                 ))}
-            </section>
+            </ul>
         );
     }
+
 }
 
-export default BookList;
+export default AuthorList;
