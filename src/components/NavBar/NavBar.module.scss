@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.navigation {
+    padding: 10px;
+    background-color: $purple;
+    color: $cream;
+    list-style-type: none;
+    width: 200px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

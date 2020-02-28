@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from '../../logo.svg';
-import './App.module.scss';
+import styles from './App.module.scss';
 import Header from "../../components/Header"
 import BookList from '../../components/BookList/BookList';
+import NavBar from "../../components/NavBar"
 
 function App() {
   return (
-    <main>
+    <main className={styles.app}>
+      <NavBar/>
       <div>
         <Header/>
         <BookList/>
