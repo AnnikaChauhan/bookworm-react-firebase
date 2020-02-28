@@ -1,0 +1,8 @@
+@import "../../variables";
+
+.books {
+    background-color: $camel;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
