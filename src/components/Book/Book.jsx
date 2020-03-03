@@ -7,7 +7,7 @@ class Book extends Component {
 
         return(
             <article className={styles.book}>
-                <img src={require("../../static/images/" + bookData.picture)}/>
+                <img src={bookData.picture}/>
                 <div>
                     <h3>{bookData.title}</h3>
                     <h4>{bookData.author}</h4>
