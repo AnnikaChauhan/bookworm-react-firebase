@@ -10,7 +10,7 @@ class NavBar extends Component {
         books: [],
         authors: []
     }
-
+    //you could do this entire thing on the App page instead, do all of the calls there for books/author etc, the set state would have several things in it
     componentDidMount(){
         firestore
             .collection("books")
