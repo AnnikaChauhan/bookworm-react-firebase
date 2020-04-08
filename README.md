@@ -1,3 +1,10 @@
+# BookWorm | React
+This was one of the first projects built alone in React. It is a React App with a Firebase database attached - all data renders directly from the database. 
+
+This app was build in React. If you clone this repo down you will need to do a 'yarn install' in the terminal in order to install all of the related packages. You can then do a 'yarn start' to view a demo version of the app as you make changes.
+
+This app is available [here](https://bookworm-d93e4.firebaseapp.com/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
